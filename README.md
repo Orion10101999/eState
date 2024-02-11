@@ -11,3 +11,10 @@
 
     - Auto Rename Tag
     - ES7 (react/)
+
+# Q.3. Pages :-
+    - About , Home , Profile , SignIn , SignOut
+    - npm i react-router-dom
+    - BrowserRouter , Routes , Route
+
+# Q.4. 
