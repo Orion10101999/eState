@@ -23,3 +23,15 @@
     - <h1>SahandEstate , Search , Home , About ,SignIn
 
     - Create and run the server backend 
+
+# Q.5. 
+
+    -> npm init -y
+    -> npm i express
+    -> npm i nodemon
+    -> npm i mongoose
+    -> npm i dotenv
+    -> type : module
+    -> dev : nodemon api/index.js
+    -> start : node api/index.js
+    
