@@ -24,7 +24,7 @@
 
     - Create and run the server backend 
 
-# Q.5. 
+# Q.5. Packege for Backend
 
     -> npm init -y
     -> npm i express
@@ -34,4 +34,8 @@
     -> type : module
     -> dev : nodemon api/index.js
     -> start : node api/index.js
+    -> dotenv.config()
+
+# Q.6. user.model for Backend 
+# Q.7. Create a test API route 
     
