@@ -2,10 +2,11 @@ import express from 'express';
 import mpngoose from 'mongoose'
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import userRouter from './routes/user.route.js'
-
+import userRouter from './routes/user.route.js' ;
+import authRouter from './routes/auth.route.js' ;
 dotenv.config();
 const app = express()
+app.use(express.json())
 
 mongoose.connect(process.env.MONGO)
 
@@ -23,8 +24,19 @@ mongoose.connect(process.env.MONGO)
 
 // API Route 
 
-app.get('/',(req,resp)=>{
-    resp.send("Hello World")
+app.post('/',(req,resp)=>{
+    console.log(req.body);
 })
 
 app.use('/api/user' , userRouter )
+app.use('/api/auth' ,  authRouter )
+
+app.use((err , req , resp ,next)=>{
+    const statusCode = err.statusCode || 500 
+    const message = err.message || 'Internal Server Error'
+    return resp.status(statusCode).json({
+        sucess : false,
+        statusCode,
+        message
+    })
+})

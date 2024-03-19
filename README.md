@@ -38,4 +38,13 @@
 
 # Q.6. user.model for Backend 
 # Q.7. Create a test API route 
-    
+# Q.8. Create a sign up API route 
+
+# Q.9. hash password 
+
+    -> npm i bcryptjs
+    -> bcryptjs.hashSync(password , 10)
+
+# Q.10. Create a middleware and a function to handle possible errors . 
+
+# Q.11. Sign In Api route and Sign In Functionality ;
